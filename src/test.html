@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>一拳超人</title>
+</head>
+<body>
+<div id="demo1"></div>
+<style id="demo2"></style>
+<style>
+    #button{
+        top: 0;
+        right: 0;
+        display: flex;
+        position: fixed;
+        z-index: 10;
+        flex-direction:column ;
+        margin: 5px ;
+    }
+    #button > button{
+        margin: 5px;
+        padding: 5px;
+    }
+    #demo2{
+        display: none;
+    }
+    #html{
+        position: fixed;
+        height: 60vh;
+        width: 100%;
+        left: 0;
+        bottom: 15px;
+    }
+    #demo1{
+        position: fixed;
+        height: 40vh    ;
+        width: 100%;
+        top: 0;
+        left: 0;
+        overflow-y: auto;
+    }
+    #demo1::-webkit-scrollbar{
+        display: none;
+    }
+    @media(max-width: 500px) {
+        #html{
+            left: 30%;
+            height: 70vh;
+        }
+        #demo1{
+            height: 30vh;
+        }
+    }
+</style>
+<div id="button">
+    <button id="btnStop">暂停</button>
+    <button id="btnPlay">播放</button>
+    <button id="btnFast">快速</button>
+    <button id="btnSlow">慢速</button>
+    <button id="btnNormal">中速</button>
+</div>
+<div id="html">
+    <div class="onePunchMan">
+        <div class="face">
+            <img src="./image/light.png" class="light">
+            <div class="yuan1"></div>
+            <div class="yuan2"></div>
+            <div class="fang"></div>
+            <div class="fangBorder"></div>
+            <div class="eyes">
+            <div class="eyesLeft"></div>
+            <div class="eyesRight"></div>
+            <div class="eyeballs">
+                <div class="leftEyeball"></div>
+                <div class="rightEyeball"></div>
+            </div>
+        </div>
+                <div class="leftEyebrows"></div>
+                <div class="rightEyebrows"></div>
+            <div class="mouth">
+                <div class="oval1"></div>
+                <div class="oval2"></div>
+            </div>
+            <div class="nose">
+                <div class="straight"></div>
+                <div class="oval"></div>
+            </div>
+            <div class="ears">
+                <div class="rightEar"></div>
+                <div class="leftEar"></div>
+            </div>
+            
+        </div>
+       
+    </div>
+</div>
+<script src="./test.js"></script>
+</body>
+</html>
